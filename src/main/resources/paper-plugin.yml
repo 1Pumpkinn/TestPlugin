@@ -1,0 +1,9 @@
+name: TestPlugin
+description: $description
+version: '${version}'
+
+main: net.rose.Main
+api-version: '1.21.11'
+load: POSTWORLD
+
+authors: [ PumpkinDev ]
