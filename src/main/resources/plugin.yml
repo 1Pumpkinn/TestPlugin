@@ -2,8 +2,11 @@ name: TestPlugin
 description: $description
 version: '${version}'
 
-main: net.rose.Main
+main: net.rose.main.Main
 api-version: '1.21.11'
 load: POSTWORLD
-
 authors: [ PumpkinDev ]
+commands:
+  heal:
+    description: Heal yourself
+
