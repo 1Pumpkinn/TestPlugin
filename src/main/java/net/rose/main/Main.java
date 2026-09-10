@@ -10,6 +10,9 @@ public final class Main extends JavaPlugin {
         // Plugin startup logic
         System.out.println("Hello World! This is my plugin!");
         getCommand("heal").setExecutor(new HealCommand());
+        getCommand("glowing").setExecutor(new GlowingCommand());
+        getCommand("test").setExecutor(new TestCommand());
+        getCommand("cmdarg").setExecutor(new CommandArgument());
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
     }
 

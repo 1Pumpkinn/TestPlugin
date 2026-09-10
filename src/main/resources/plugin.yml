@@ -9,4 +9,8 @@ authors: [ PumpkinDev ]
 commands:
   heal:
     description: Heal yourself
+  glowing:
+    description: Slayyyy
+  test:
+  cmdarg:
 

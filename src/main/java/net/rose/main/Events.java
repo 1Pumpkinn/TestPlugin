@@ -11,8 +11,8 @@ public class Events implements Listener {
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent e) {
 
-        e.setCancelled(true);
-        e.getPlayer().sendMessage(ChatColor.RED + "You can't move.");
+        e.setCancelled(false);
+        //e.getPlayer().sendMessage(ChatColor.RED + "You can't move.");
     }
 
     @EventHandler
