@@ -1,5 +1,9 @@
 package net.rose.main;
 
+import net.rose.main.commands.CommandArgument;
+import net.rose.main.commands.GlowingCommand;
+import net.rose.main.commands.HealCommand;
+import net.rose.main.commands.TestCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

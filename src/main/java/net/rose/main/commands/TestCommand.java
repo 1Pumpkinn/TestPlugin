@@ -1,21 +1,23 @@
-package net.rose.main;
+package net.rose.main.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class HealCommand implements CommandExecutor {
-
+public class TestCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
         if(sender instanceof Player) {
-            Player player =  (Player) sender; // forcing sender to be a player
-            player.sendMessage("Your health has been restored!");
-            player.setHealth(20);
-            
+            // if first argument is equal to 'hello', then send hello back
+            if(args.length == 1) {
+                if(args[0].equalsIgnoreCase("hello")) {
+                    ((Player) sender).sendMessage("Hello!");
+                }
+             }
         }
+
 
         return false;
     }

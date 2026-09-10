@@ -1,4 +1,4 @@
-package net.rose.main;
+package net.rose.main.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
