@@ -1,5 +1,7 @@
 package net.rose.main;
 
+import com.destroystokyo.paper.event.player.PlayerJumpEvent;
+import net.kyori.adventure.sound.Sound;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -21,6 +23,15 @@ public class Events implements Listener {
         e.getPlayer().sendMessage("You threw an egg!");
 
 
+
     }
+
+    @EventHandler
+    public void onPlayerJumpEvent(PlayerJumpEvent e) {
+        e.getPlayer().sendMessage("Wow You have just Jumped!");
+
+    }
+
+
 
 }

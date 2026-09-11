@@ -9,18 +9,18 @@ public class Debugging {
     public Debugging(Main main) {
 
 
-        String[] strings = new String[]{"Test","Test2","Test3","Test4"};
-
-        System.out.println("Got to stage 1");
-
-        System.out.println(strings[0]);
-        System.out.println("Got to stage 2");
-        System.out.println(strings[2]);
-        System.out.println("Got to stage 3");
-        //  System.out.println(strings[3]);
-        System.out.println(strings[1]);
-
-        System.out.println("Finished everything!");
+//        String[] strings = new String[]{"Test","Test2","Test3","Test4"};
+//
+//        System.out.println("Got to stage 1");
+//
+//        System.out.println(strings[0]);
+//        System.out.println("Got to stage 2");
+//        System.out.println(strings[2]);
+//        System.out.println("Got to stage 3");
+//        //  System.out.println(strings[3]);
+//        System.out.println(strings[1]);
+//
+//        System.out.println("Finished everything!");
 
 
 // Common Errors:
