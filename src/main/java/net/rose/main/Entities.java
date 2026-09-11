@@ -31,21 +31,21 @@ public class Entities implements Listener {
     }
 
     @EventHandler
-    public void onEntitiySpawn(CreatureSpawnEvent e) {
-        System.out.println(e.getSpawnReason());
+    public void onEntitySpawn(CreatureSpawnEvent e) {
+      //  System.out.println(e.getSpawnReason());
 
 
 
     }
 
     @EventHandler
-    public void onEntitiyDeath(EntityDeathEvent e) {
+    public void onEntityDeath(EntityDeathEvent e) {
         e.setDroppedExp(500);
     }
 
     @EventHandler
-    public void onEntitiyDamage(EntityDamageEvent e) {
-        System.out.println(e.getCause());
+    public void onEntityDamage(EntityDamageEvent e) {
+       // System.out.println(e.getCause());
     }
 
 }
