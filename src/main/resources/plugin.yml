@@ -15,4 +15,6 @@ commands:
   cmdarg:
   cnslcmd:
   config:
+  permissioncmd:
+    
 
