@@ -30,6 +30,8 @@ public class ConfigCommand implements CommandExecutor {
             list.add("New Value!");
             main.getConfig().set("String-list", list);
 
+            player.sendMessage(main.getConfig().getDouble("Double") + "");
+
             main.saveConfig();
         }
 
