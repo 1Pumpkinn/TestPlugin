@@ -8,6 +8,10 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
+
         // Plugin startup logic
         System.out.println("Hello World! This is my plugin!");
         getCommand("heal").setExecutor(new HealCommand());
@@ -15,6 +19,7 @@ public final class Main extends JavaPlugin {
         getCommand("test").setExecutor(new TestCommand());
         getCommand("cmdarg").setExecutor(new CommandArgument());
         getCommand("cnslcmd").setExecutor(new CnslCommand());
+        getCommand("config").setExecutor(new ConfigCommand(this));
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
     }
 
