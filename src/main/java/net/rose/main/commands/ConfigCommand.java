@@ -7,6 +7,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.List;
+
 public class ConfigCommand implements CommandExecutor {
 
     // Passing through live instance in short gives access to Main
@@ -22,18 +24,14 @@ public class ConfigCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-            player.sendMessage(main.getConfig().getString("Word"));
-            player.sendMessage(main.getConfig().getInt("Number") + "");
-            if(main.getConfig().getBoolean("Boolean")) {
-                player.sendMessage("This feature is enabled!");
-            }
-            for(String string : main.getConfig().getStringList("String-list")) {
-                player.sendMessage(string);
-            }
+            main.getConfig().set("Word", "Cake");
 
+            List<String> list = main.getConfig().getStringList("String-list");
+            list.add("New Value!");
+            main.getConfig().set("String-list", list);
+
+            main.saveConfig();
         }
-
-
 
         return false;
     }
