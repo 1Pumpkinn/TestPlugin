@@ -21,6 +21,8 @@ public final class Main extends JavaPlugin {
         getCommand("cnslcmd").setExecutor(new CnslCommand());
         getCommand("config").setExecutor(new ConfigCommand(this));
         getCommand("permissioncmd").setExecutor(new PermissionCommand());
+
+        Bukkit.getPluginManager().registerEvents(new Entities(this), this);
         Debugging debugging = new Debugging(this);
 
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
