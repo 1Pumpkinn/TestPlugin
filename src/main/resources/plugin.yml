@@ -13,4 +13,5 @@ commands:
     description: Slayyyy
   test:
   cmdarg:
+  cnslcmd:
 
