@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ConfigCommand implements CommandExecutor {
 
-    // Passing through live instance in short gives access to Main
+    // Passing through live instance in short gives access to Main for this class
     private Main main;
 
     public ConfigCommand(Main main) {
