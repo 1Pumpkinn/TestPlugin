@@ -23,6 +23,7 @@ public final class Main extends JavaPlugin {
         getCommand("permissioncmd").setExecutor(new PermissionCommand());
 
         Bukkit.getPluginManager().registerEvents(new Entities(this), this);
+        Items itemstack = new Items();
         Debugging debugging = new Debugging(this);
 
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
