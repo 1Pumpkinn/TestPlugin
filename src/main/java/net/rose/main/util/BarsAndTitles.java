@@ -1,4 +1,4 @@
-package net.rose.main;
+package net.rose.main.util;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;

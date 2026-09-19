@@ -1,6 +1,9 @@
 package net.rose.main;
 
 import net.rose.main.commands.*;
+import net.rose.main.events.Events;
+import net.rose.main.util.BarsAndTitles;
+import net.rose.main.util.PluginBossBar;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -1,4 +1,4 @@
-package net.rose.main;
+package net.rose.main.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

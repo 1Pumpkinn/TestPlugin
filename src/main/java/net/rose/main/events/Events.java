@@ -1,8 +1,6 @@
-package net.rose.main;
+package net.rose.main.events;
 
 import com.destroystokyo.paper.event.player.PlayerJumpEvent;
-import net.kyori.adventure.sound.Sound;
-import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerEggThrowEvent;
