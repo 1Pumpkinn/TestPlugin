@@ -26,9 +26,6 @@ public class PluginBossBar implements Listener {
                 BarFlag.PLAY_BOSS_MUSIC);
 
         bossBar.setProgress(0.5);
-
-
-
         bossBar.addPlayer(e.getPlayer());
     }
 }
