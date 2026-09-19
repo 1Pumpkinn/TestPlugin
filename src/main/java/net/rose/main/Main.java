@@ -27,6 +27,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new Items(), this);
         Debugging debugging = new Debugging(this);
 
+        Bukkit.getPluginManager().registerEvents(new PluginBossBar(), this);
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
     }
 
