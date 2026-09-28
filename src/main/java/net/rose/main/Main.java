@@ -6,6 +6,7 @@ import net.rose.main.player.PluginPlayerEffect;
 import net.rose.main.util.BarsAndTitles;
 import net.rose.main.util.CustomFireworks;
 import net.rose.main.util.PluginBossBar;
+import net.rose.main.world.WorldStuff;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -36,6 +37,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
         Bukkit.getPluginManager().registerEvents(new CustomFireworks(), this);
         Bukkit.getPluginManager().registerEvents(new PluginPlayerEffect(), this);
+        // Bukkit.getPluginManager().registerEvents(new WorldStuff(), this);
     }
 
 
