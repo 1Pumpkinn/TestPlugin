@@ -17,7 +17,7 @@ public class WorldStuff implements Listener {
 
         player.getWorld().setStorm(true);
         player.getWorld().setThundering(true);
-        player.getWorld().setTime();
+        player.getWorld().setTime(18000);
         //0-24000, 0/24000 = 6AM, 6000 = MidDay, 12000 = 6PM, 18000 Midnight.
         Bukkit.getWorld("world");
         Bukkit.createWorld(new WorldCreator("CustomWorld"));

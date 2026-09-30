@@ -26,7 +26,7 @@ public class Events implements Listener {
 
     @EventHandler
     public void onPlayerJumpEvent(PlayerJumpEvent e) {
-        e.getPlayer().sendMessage("Wow You have just Jumped!");
+        e.getPlayer().sendMessage("Wow YOU ARE SO CUTE!");
 
     }
 
