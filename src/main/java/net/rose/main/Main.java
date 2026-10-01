@@ -3,6 +3,7 @@ package net.rose.main;
 import net.rose.main.commands.*;
 import net.rose.main.events.Events;
 import net.rose.main.player.PluginPlayerEffect;
+import net.rose.main.player.PluginProjectiles;
 import net.rose.main.util.BarsAndTitles;
 import net.rose.main.util.CustomFireworks;
 import net.rose.main.util.PluginBossBar;
@@ -39,6 +40,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new Events(), this); // Register the event listener
         Bukkit.getPluginManager().registerEvents(new CustomFireworks(), this);
         Bukkit.getPluginManager().registerEvents(new PluginPlayerEffect(), this);
+        Bukkit.getPluginManager().registerEvents(new PluginProjectiles(), this);
         // Bukkit.getPluginManager().registerEvents(new WorldStuff(), this);
     }
 
