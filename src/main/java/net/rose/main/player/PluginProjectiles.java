@@ -9,6 +9,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
+import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.EquipmentSlotGroup;
 
 public class PluginProjectiles implements Listener {
@@ -36,10 +37,10 @@ public class PluginProjectiles implements Listener {
 
         Player player = e.getPlayer();
 
-        if(e.getHand().equals(EquipmentSlotGroup.MAINHAND)) {
+        if(e.getHand().equals(EquipmentSlot.HAND)) {
             if(e.getAction().equals(Action.RIGHT_CLICK_AIR) || e.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
                 if(player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getType().equals(Material.DIAMOND_HOE)) {
-                    Egg egg = player.launchProjectile(Egg.class, player.getLocation().getDirection());
+                    player.launchProjectile(Egg.class, player.getLocation().getDirection());
 
                     // adding Egg egg allows u to access the egg's methods and allows u to change their properties.
                 }
