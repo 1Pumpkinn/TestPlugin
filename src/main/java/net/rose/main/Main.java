@@ -2,6 +2,7 @@ package net.rose.main;
 
 import net.rose.main.commands.*;
 import net.rose.main.events.Events;
+import net.rose.main.events.ToggleListener;
 import net.rose.main.player.PluginPlayerEffect;
 import net.rose.main.player.PluginProjectiles;
 import net.rose.main.util.*;
@@ -39,6 +40,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new PluginPlayerEffect(), this);
         Bukkit.getPluginManager().registerEvents(new PluginProjectiles(), this);
         Bukkit.getPluginManager().registerEvents(new PluginParticles(this), this);
+        Bukkit.getPluginManager().registerEvents(new ToggleListener(), this);
         // Bukkit.getPluginManager().registerEvents(new WorldStuff(), this);
     }
 
