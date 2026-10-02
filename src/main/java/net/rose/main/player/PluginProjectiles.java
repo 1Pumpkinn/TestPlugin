@@ -26,7 +26,7 @@ public class PluginProjectiles implements Listener {
     @EventHandler
     public void onHit(ProjectileHitEvent e) {
 
-        // e.getEntity().getShooter() <-- Gets the person who launched the Projectile.
+        // e.getEntity().getShooter() <- - Gets the person who launched the Projectile.
         // e.getHitBlock(); <-- Gets the Block that the Projectile Hit.
         // e.getHitEntity(); <-- Gets the Entity that was hit by the Projectile.
 
